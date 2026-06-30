@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Un luogo accogliente dove iniziare la giornata con il caffè perfetto e gustare le migliori brioche artigianali.">
+    <meta name="description" content="Trovate il vostro angolo di relax a Pisa">
     <title>Carraia Del Nicchio-Caffetteria Pisa · Bar</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -148,7 +148,7 @@
        GALLERY — 3 photos: large left + 2 right
                   2 photos: equal halves
     ============================================================ */
-    .gallery    { background: var(--c-bg); }
+    .gallery    { background: #fff; }
     .gg-3       { display: grid; grid-template-columns: repeat(12, 1fr); grid-template-rows: 260px 260px; gap: 16px; margin-top: 48px; }
     .gg-3 .gi-1 { grid-column: 1/8;  grid-row: 1/3; }
     .gg-3 .gi-2 { grid-column: 8/13; grid-row: 1/2; }
@@ -161,6 +161,17 @@
     .gallery-item::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.4) 0%, transparent 55%); opacity: 0; transition: opacity .4s; }
     .gallery-item:hover img   { transform: scale(1.07); }
     .gallery-item:hover::after { opacity: 1; }
+
+    /* ============================================================
+       FEATURES / PUNTI DI FORZA
+    ============================================================ */
+    .features       { background: var(--c-bg); }
+    .features-grid  { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 48px; }
+    .feature-card   { background: #fff; border-radius: var(--radius); padding: 40px 28px; box-shadow: var(--shadow-sm); text-align: center; transition: transform .35s var(--ease), box-shadow .35s; border-top: 3px solid var(--c-accent); }
+    .feature-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-md); }
+    .feature-icon   { font-size: 2.8rem; line-height: 1; margin-bottom: 18px; display: block; }
+    .feature-title  { font-family: var(--f-head); font-size: 1.28rem; font-weight: 600; color: var(--c-primary); margin-bottom: 10px; }
+    .feature-text   { font-size: .95rem; color: var(--c-muted); line-height: 1.66; }
 
     /* ============================================================
        CONTACT SECTION
@@ -277,10 +288,10 @@
     <div class="hero-content">
         <div class="hero-badge">
             <span aria-hidden="true">☕</span>
-            <span>Bar</span>
+            <span>Carraia Del Nicchio-Caffetteria Pisa</span>
         </div>
-        <h1 class="hero-title">Carraia Del Nicchio-Caffetteria Pisa</h1>
-        <p class="hero-desc">Un luogo accogliente dove iniziare la giornata con il caffè perfetto e gustare le migliori brioche artigianali.</p>
+        <h1 class="hero-title">Un caffè a Pisa</h1>
+        <p class="hero-desc">Trovate il vostro angolo di relax a Pisa</p>
         <div class="hero-ctas">
             
             <a href="#contatti" class="btn btn-glass">📍 Vieni a trovarci</a>
@@ -335,8 +346,8 @@
             </div>
             <div class="sr sr-right">
                 <p class="eyebrow">Chi siamo</p>
-                <h2 class="h2">Benvenuti da<br><em>Carraia Del Nicchio-Caffetteria Pisa</em></h2>
-                <p class="lead">Un luogo accogliente dove iniziare la giornata con il caffè perfetto e gustare le migliori brioche artigianali.</p>
+                <h2 class="h2">La nostra storia</h2>
+                <p class="lead">Situata nel cuore di Pisa, la Carraia Del Nicchio-Caffetteria Pisa è il luogo ideale per fermarsi e godersi un buon caffè o un pasticcino. La nostra caffetteria offre un'atmosfera accogliente e familiare, perfetta per incontrare amici o lavorare. Non abbiamo recensioni disponibili, ma siamo pronti a servirvi con il nostro miglior sorriso.</p>
                 <div class="info-cards">
                     
                     <div class="info-card">
@@ -362,6 +373,39 @@
         </div>
     </div>
 </section>
+
+<!-- ===================== PUNTI DI FORZA ===================== -->
+
+<section class="features">
+    <div class="container">
+        <div class="sr" style="text-align:center;">
+            <p class="eyebrow">Perché sceglierci</p>
+            <h2 class="h2">I nostri punti di forza</h2>
+        </div>
+        <div class="features-grid">
+            
+            <div class="feature-card sr sr-scale sr-d1">
+                <span class="feature-icon" aria-hidden="true">☕️</span>
+                <div class="feature-title">Caffè di qualità</div>
+                <div class="feature-text">Il nostro caffè è preparato con cura e attenzione</div>
+            </div>
+            
+            <div class="feature-card sr sr-scale sr-d2">
+                <span class="feature-icon" aria-hidden="true">🥐</span>
+                <div class="feature-title">Pasticcini freschi</div>
+                <div class="feature-text">I nostri pasticcini sono preparati ogni giorno con ingredienti freschi</div>
+            </div>
+            
+            <div class="feature-card sr sr-scale sr-d3">
+                <span class="feature-icon" aria-hidden="true">🏙️</span>
+                <div class="feature-title">Posizione centrale</div>
+                <div class="feature-text">Siamo situati nel cuore di Pisa, facilmente raggiungibili</div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
 
 <!-- ===================== GALLERY ===================== -->
 
@@ -398,7 +442,7 @@
         <div class="sr" style="text-align:center;">
             <p class="eyebrow">Contattaci</p>
             <h2 class="h2">Vieni a trovarci</h2>
-            <p class="lead" style="margin:0 auto;">Siamo qui per servirti al meglio — contattaci o passa direttamente da noi!</p>
+            <p class="lead" style="margin:0 auto;">Vieni a trovarci e scopri il nostro caffè!</p>
         </div>
         <div class="contact-cards">
             
